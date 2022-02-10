@@ -1,0 +1,19 @@
+.consult {
+    min-height: 680px;
+    background: url(../../img/bg/bg_secondary.png) center (center/cover) no-repeat;
+    padding: 100px 0 100px 0;
+
+    &__header {
+        font-weight: bold;
+        font-size: 36px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 20px;
+        color: #FFFFFF;
+        margin-top: 8px;
+    }
+}
