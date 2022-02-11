@@ -1,0 +1,132 @@
+.catalog-card {
+    width: 303px;
+    min-height: 442px;
+    border: 2px solid #E8E8E8;
+    padding: 20px;
+    overflow: hidden;
+    margin-bottom: 19px;
+
+    &__image {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin-top: 15px;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        color: #0D0D0D;
+    }
+
+    &__subtitle {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #0D0D0D;
+        margin-top: 15px;
+    }
+
+    &__details {
+        display: block;
+        margin: 10px auto;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        text-decoration: underline;
+        color: #C70101;
+    }
+
+    &__back {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(calc(-50% - 20px));
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: underline;
+        color: #C70101;
+    }
+
+    hr {
+        margin: 17px 0;
+    }
+
+    &__sum {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__priceold {
+        font-weight: 300;
+        font-size: 14px;
+        text-decoration-line: line-through;
+        color: #555555;
+    }
+
+    &__pricenew {
+        font-weight: bold;
+        font-size: 20px;
+        color: #050505;
+    }
+
+    &__wrapper {
+        display: flex;
+        width: calc(200% + 40px);
+    }
+
+    &__main {
+        width: 50%;
+        margin-right: 0px;
+        transform: translateX(-100%);
+        transition: 0.5s all;
+
+        &_active {
+            transform: translateX(0);
+            margin-right: 20px;
+        }
+    }
+
+    &__secondary {
+        width: 50%;
+        margin-right: 20px;
+        transform: translateX(0%);
+        padding-right: 20px;
+        padding-left: 20px;
+        transition: 0.5s all;
+
+        &_active {
+            transform: translateX(-100%);
+            margin-left: 0px;
+        }
+
+        ul {
+            position: relative;
+            list-style-type: none;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 21px;
+            color: #555555;
+            padding: 0;
+
+            li {
+                position: relative;
+                margin-bottom: 11px;
+
+                &:before {
+                    content: "";
+                    width: 5px;
+                    height: 5px;
+                    background-color: #C70101;
+                    position: absolute;
+                    left: -14px;
+                    top: 7px;
+                }
+            }
+        }
+    }
+
+
+}
