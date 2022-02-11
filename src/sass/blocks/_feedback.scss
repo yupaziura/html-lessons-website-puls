@@ -1,0 +1,38 @@
+.feedback {
+    padding: 60px 0 81px 0;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+
+    &__photo {
+        margin-right: 60px;
+    }
+
+    &__name {
+        font-weight: bold;
+        font-size: 18px;
+        color: #0D0D0D;
+    }
+
+    &__mar {
+        font-weight: 500;
+        font-size: 14px;
+        color: #646464;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        color: #0D0D0D;
+        margin-top: 25px;
+    }
+}
