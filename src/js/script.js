@@ -44,5 +44,34 @@ $(document).ready(function(){
         })
     })
 
+
+    function validForm (form) {
+        $(form).validate({
+            rules: {
+                name: 'required',
+                phone: 'required',
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Enter name",
+                email: {
+                    required: "Enter valid email",
+                    email: "Must be valid"
+                },
+                phone: "Enter phone"
+            }
+        }); 
+    };
+
+    validForm('#main-form');
+    validForm('#order .form');
+    validForm('#consult .form');
+
+    $('input[name=phone]').mask("+380 99 999 99 99")
+
+
   });
       

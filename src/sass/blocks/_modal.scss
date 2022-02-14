@@ -18,7 +18,7 @@
     min-height: 400px;
     background: #F2F2F2;
 
-    &_success{
+    &_success {
         min-height: 143px;
         padding: 0 65px;
     }
@@ -52,8 +52,21 @@
         color: #c80404;
     }
 
+    .error {
+        border: 2px solid red;
+    }
+
+    label.error {
+        border: none;
+        color: red;
+        font-weight: 300;
+        margin-bottom: 7px;
+    }
+
 }
 
-#order, #consult, #success {
+#order,
+#consult,
+#success {
     display: none;
 }

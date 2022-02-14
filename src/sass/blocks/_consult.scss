@@ -16,4 +16,15 @@
         color: #FFFFFF;
         margin-top: 8px;
     }
+
+    .form {
+        .error {
+            border: 2px solid rgb(255, 129, 129);
+        }
+
+        label.error {
+            border: none;
+            color: rgb(255, 129, 129);
+        }
+    }
 }
