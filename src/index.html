@@ -35,7 +35,7 @@
                 </div>
                 <div class="header__contact">
                     <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-                    <button class="button">заказать звонок</button>
+                    <button class="button" data-modal="consult">заказать звонок</button>
                 </div>
             </div>
 
@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="promo__tocatalog">
-                    <button class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+                    <button class="button button_main" data-modal="consult">заказать кОНСУЛЬТАЦИЮ</button>
                     <div class="promo__go">или <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a> </div>
                 </div>
             </div>
@@ -174,7 +174,7 @@
                     <div class="catalog-card__wrapper">
                         <div class=" catalog-card__main catalog-card__main_active">
                             <img class="catalog-card__image" src="./img/puls_catalog.png" alt="">
-                            <div class="catalog-card__title">Пульсометр Polar FT1</div>
+                            <div class="catalog-card__title">Пульсометр Suunto M2</div>
                             <div class="catalog-card__subtitle">Для первых шагов в тренировках, основанных на сердечном
                                 ритме
                             </div>
@@ -267,7 +267,7 @@
                     <div class="catalog-card__wrapper">
                         <div class=" catalog-card__main catalog-card__main_active">
                             <img class="catalog-card__image" src="./img/puls_catalog.png" alt="">
-                            <div class="catalog-card__title">Пульсометр Polar FT1</div>
+                            <div class="catalog-card__title">Пульсометр Suunto M2</div>
                             <div class="catalog-card__subtitle">Для первых шагов в тренировках, основанных на сердечном
                                 ритме
                             </div>
@@ -298,7 +298,7 @@
                     <div class="catalog-card__wrapper">
                         <div class=" catalog-card__main catalog-card__main_active">
                             <img class="catalog-card__image" src="./img/puls_catalog.png" alt="">
-                            <div class="catalog-card__title">Пульсометр Polar FT1</div>
+                            <div class="catalog-card__title">Пульсометр Suunto M4</div>
                             <div class="catalog-card__subtitle">Для первых шагов в тренировках, основанных на сердечном
                                 ритме
                             </div>
@@ -528,6 +528,40 @@
             </div>
         </div>
     </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consult">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form action="#" class="form">
+                <input required placeholder="Ваше имя" type="text" class="form__input">
+                <input required placeholder="Ваш телефон" type="number" class="form__input">
+                <input required placeholder="Ваш E-mail" type="email" class="form__input">
+                <button class='button button_form'>заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">Ваш заказ:</div>
+            <div class="modal__descr">Пульсометр Polar FT1</div>
+            <form action="#" class="form">
+                <input required placeholder="Ваше имя" type="text" class="form__input">
+                <input required placeholder="Ваш телефон" type="number" class="form__input">
+                <input required placeholder="Ваш E-mail" type="email" class="form__input">
+                <button class='button button_form' data-button="order">Купить</button>
+            </form>
+        </div>
+
+        <div class="modal modal_success" id="success">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+        </div>
+    </div>
+
+
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
