@@ -81,6 +81,27 @@ $(document).ready(function(){
         }
     })
 
+    new WOW().init();
+
+    function hoverAnimate (item, newClass) {
+        
+            $(item).hover(function (e) {
+                
+                $(item).addClass(newClass);
+            })
+
+            $(item).mouseleave(function (e) {
+                
+                $(item).removeClass(newClass);
+            })
+        
+    }
+
+    hoverAnimate('[data-anim=cup]', 'animate__animated  animate__bounce');
+    hoverAnimate('[data-anim=heart]', 'animate__animated  animate__heartBeat');
+    hoverAnimate('[data-anim=shoe]', 'animate__animated  animate__swing');
+
+
 
   });
       
