@@ -37,4 +37,10 @@
             color: #FF0000;
         }
     }
+
+    .img-heart {
+        &:hover {
+            animation: heartbeat 2s ease infinite;
+        }
+    }
 }
